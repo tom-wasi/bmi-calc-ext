@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">bmi-calc-extended</string>
+    <string name="height">Wzrost (cm)</string>
+    <string name="weight">Waga (kg)</string>
+    <string name="calculate">Oblicz</string>
+    <string name="result">Wynik</string>
+    <string name="waist_circumference">Obwód talii (cm)</string>
+    <string name="hips_circumference">Obwód bioder (cm)</string>
+    <string name="age">wiek (lata)\n</string>
+    <string-array name="activity_levels">
+        <item>Brak aktywności</item>
+        <item>Lekka aktywność</item>
+        <item>Średnia aktywność</item>
+        <item>Duża aktywność</item>
+        <item>Bardzo duża aktywność</item>
+    </string-array>
+</resources>
