@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.Locale;
+
 public class WHRCalculatorFragment extends Fragment {
 
     private EditText waistInput, hipInput;
@@ -51,7 +53,7 @@ public class WHRCalculatorFragment extends Fragment {
                 riskDetails = "Podwyższone ryzyko chorób sercowo-naczyniowych, cukrzycy i zespołu metabolicznego.";
             }
 
-            resultTextView.setText(String.format("WHR: %.2f\nStatus: %s\n%s", whr, status, riskDetails));
+            resultTextView.setText(String.format(Locale.getDefault(),"WHR: %.2f\nStatus: %s\n%s", whr, status, riskDetails));
         } catch (NumberFormatException e) {
             resultTextView.setText("Wprowadź poprawne dane.");
         }

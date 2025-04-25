@@ -9,6 +9,8 @@ import androidx.annotation.*;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import java.util.Locale;
+
 public class CalorieCalculatorFragment extends Fragment {
     private EditText weightInput, heightInput, ageInput;
     private Spinner activitySpinner;
@@ -45,25 +47,12 @@ public class CalorieCalculatorFragment extends Fragment {
             int age = Integer.parseInt(ageInput.getText().toString());
             String activityLevel = activitySpinner.getSelectedItem().toString();
 
-            double bmr = 10 * weight + 6.25 * height - 5 * age + 5;
-            double multiplier = getActivityMultiplier(activityLevel);
-            double calories = bmr * multiplier;
+            double calories = CalorieCalculator.calculateCalories(weight, height, age, activityLevel);
 
-            resultTextView.setText(format("Zapotrzebowanie: %.0f kcal", calories));
+            resultTextView.setText(format(Locale.getDefault(), "Zapotrzebowanie: %.0f kcal", calories));
             viewModel.setCalories(calories);
         } catch (Exception e) {
             resultTextView.setText("Błąd danych.");
-        }
-    }
-
-    private double getActivityMultiplier(String level) {
-        switch (level) {
-            case "Brak aktywności": return 1.2;
-            case "Lekka aktywność": return 1.375;
-            case "Średnia aktywność": return 1.55;
-            case "Duża aktywność": return 1.725;
-            case "Bardzo duża aktywność": return 1.9;
-            default: return 1.2;
         }
     }
 }

@@ -1,5 +1,6 @@
 package tomwas.pjwstk.bmi_calc_extended;
 
+import java.util.Locale;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,7 +56,7 @@ public class BMICalculatorFragment extends Fragment {
                 riskDetails = "Wysokie ryzyko chorób sercowo-naczyniowych, cukrzycy, problemów ze stawami.";
             }
 
-            resultTextView.setText(String.format("BMI: %.2f\nStatus: %s\n%s", bmi, status, riskDetails));
+            resultTextView.setText(String.format(Locale.getDefault(), "BMI: %.2f\nStatus: %s\n%s", bmi, status, riskDetails));
         } catch (NumberFormatException e) {
             resultTextView.setText("Wprowadź poprawne dane.");
         }
