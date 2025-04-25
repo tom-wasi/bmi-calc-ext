@@ -7,3 +7,18 @@
 <img width="267" alt="{460C3F4C-E728-482E-8224-1E045CAEDF54}" src="https://github.com/user-attachments/assets/94fc43bb-5a01-4efd-80bd-2217d99a56f4" />
 <img width="265" alt="{DFE32954-F133-46AD-93CC-0BC706558697}" src="https://github.com/user-attachments/assets/6ea082ba-553a-4074-bf14-8d72472dee52" />
 <img width="265" alt="{AE5F6ABA-E070-4064-A29F-42F96C5996C7}" src="https://github.com/user-attachments/assets/53200971-b409-42e2-8dd9-5739e1d47d2d" />
+
+===
+
+##Inspection
+
+Before:
+![image](https://github.com/user-attachments/assets/e57309bd-0df8-4259-b725-fbf259c69291)
+
+
+After:
+![image](https://github.com/user-attachments/assets/0c3036f3-cbe6-496b-a9ba-be673fd13a11)
+
+
+##Monkey test logs:
+![image](https://github.com/user-attachments/assets/837e0387-4657-4d98-b258-a78b3883cc40)
