@@ -10,7 +10,7 @@
 
 ===
 
-##Inspection
+#Inspection
 
 Before:
 ![image](https://github.com/user-attachments/assets/e57309bd-0df8-4259-b725-fbf259c69291)
@@ -20,5 +20,5 @@ After:
 ![image](https://github.com/user-attachments/assets/0c3036f3-cbe6-496b-a9ba-be673fd13a11)
 
 
-##Monkey test logs:
+#Monkey test logs:
 ![image](https://github.com/user-attachments/assets/837e0387-4657-4d98-b258-a78b3883cc40)
